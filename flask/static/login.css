@@ -1,0 +1,68 @@
+body {
+  background-image: url(img/loginBg.jpg);
+  background-size: cover;
+}
+.login-wrapper {
+  width: 300px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.form-title {
+  color: white;
+  padding-top: 30px;
+  font-size: 40px;
+  text-align: center;
+}
+form {
+  margin: 0px;
+  padding: 0 0 20px;
+  text-align: center;
+}
+
+input {
+  width: 70%;
+  background-color: rgba(100, 100, 100, 0.5);
+  color: rgb(77, 77, 77);
+  border-radius: 10px;
+  padding: 5px;
+  padding-left: 5px;
+  margin: 10px;
+  outline: none;
+}
+input[type="submit"] {
+  background-color: teal;
+  font-weight: bold;
+}
+
+input[placeholder="Username"] {
+  background-color: rgba(255, 255, 255, 0.822);
+}
+input[placeholder="Password"] {
+  background-color: rgba(255, 255, 255, 0.822);
+}
+input[type="text"] {
+  transition: width 0.4s ease-in-out;
+}
+input[type="text"]:focus {
+  width: 80%;
+  background-color: white;
+}
+input[type="password"] {
+  transition: width 0.4s ease-in-out;
+}
+input[type="password"]:focus {
+  width: 80%;
+  background-color: white;
+}
+input[type="submit"] {
+  background-color: white;
+  color: rgb(80, 80, 80);
+}

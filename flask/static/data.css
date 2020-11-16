@@ -1,0 +1,124 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+nav {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: teal;
+}
+.logo {
+  padding-left: 100px;
+  color: white;
+  letter-spacing: 5px;
+}
+.nav-links {
+  padding-right: 100px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+.nav-links li {
+  list-style: none;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+.nav-links selected {
+  color: teal;
+}
+.content-wrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding-top: 80px;
+  padding-left: 100px;
+}
+
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0px;
+  min-width: 600px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.content-table thead tr {
+  background-color: teal;
+  color: white;
+  text-align: left;
+  font-weight: bold;
+}
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+.content-table tbody tr {
+  border-bottom: 1px solid teal;
+}
+.content-table tbody tr:nth-of-type(even) {
+  background-color: rgba(0, 128, 128, 0.158);
+}
+.content-table tbody tr:last-of-type {
+  border-bottom: 1px solid rgb(0, 61, 61);
+}
+.result {
+  width: 500px;
+}
+button {
+  background-color: teal; /* Green */
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) s;
+  color: white;
+  padding: 8px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  outline: none;
+}
+
+.modal-bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+}
+.bg-active {
+  visibility: visible;
+  opacity: 1;
+}
+.modal-box {
+  background-color: white;
+  border-radius: 10px;
+  width: 30%;
+  height: 70%;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.btn1 {
+  display: flex;
+  justify-content: space-around;
+}
+.submit {
+  width: 70%;
+}

@@ -1,0 +1,63 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+nav {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: teal;
+}
+.logo {
+  padding-left: 100px;
+  color: white;
+  letter-spacing: 5px;
+}
+.nav-links {
+  padding-right: 100px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+.nav-links li {
+  list-style: none;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+.nav-links selected {
+  color: teal;
+}
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+.kiri {
+  flex: 1;
+  background-image: url(img/ilustration.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.kanan {
+  width: 600px;
+  box-sizing: border-box;
+}
+
+.title {
+  padding-top: 140px;
+  padding-left: 0px;
+}
+p {
+  font-size: 15px;
+  padding-left: 0px;
+  padding-right: 150px;
+  text-align: justify;
+  text-indent: 5%;
+}

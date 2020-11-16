@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">List Menu</a></li>
+      <li><a href="/upload">Upload File</a></li>
+      <li><a href="#">Hasil Analisa</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="/logout"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+    </ul>
+  </div>
+</nav>
+  
+<div class="container">
+	<div class="sm col 2"></div>
+	<div class="sm col 8">
+  <h1>Welcome to home!</h1>
+</div>
+<h1>File Input</h1>
+      <form method="POST" action="http://127.0.0.1:5000/upload" enctype="multipart/form-data">
+      <div class="form-group">
+      <label for="inputFile">file input</label>
+      <input type="file" id="inputFile" name="inputFile" accept=".csv">        
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<td>No</td>
+			<td>Nama File</td>
+		</tr>
+	</thead>
+	{% for File in myFiles %}
+	<tbody>
+		<tr>
+			<td>{{File.id}}</td>
+			<td>{{File.name}}</td>
+			<td>
+        <form>
+            <a href="/delete/{{File.id}}" type="submit" class="btn btn-default" action="/delete/<id>/" value="Delete">Delete</a> 
+              <a href="/proses/{{File.id}}" type="submit" class="btn btn-default" action="/proses/<id>/">Proses</a> 
+        </form>
+    </td>
+		</tr>
+	</tbody>
+	{% endfor%}
+</table>
+</div>
+<div class="sm col 2"></div>
+</body>
+</html>

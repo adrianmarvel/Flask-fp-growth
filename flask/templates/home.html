@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='home.css')}}"/>
+        <title>Home</title>
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <h1>FP-Growth</h1>
+            </div>
+            <ul class="nav-links">
+                <li class="selected"><a href="#">Home</a></li>
+                <li><a href="/data">Data</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+        <div class="content-wrapper">
+            <div class="kiri">
+            </div>
+            <div class="kanan">
+                <h1 class="title">Association Rule <br> FP-Growth</h1>
+                <p>
+                    The FP-Growth Algorithm, proposed by Han in, is an efficient and scalable method for mining the complete set of frequent patterns by pattern fragment growth, using an extended prefix-tree structure for storing compressed and crucial information about frequent patterns named frequent-pattern tree (FP-tree). In his study, Han proved that his method outperforms other popular methods for mining frequent patterns, e.g. the Apriori Algorithm and the TreeProjection . In some later works it was proved that FP-Growth has better performance than other methods, including Eclat and Relim. The popularity and efficiency of FP-Growth Algorithm contributes with many studies that propose variations to improve his performance
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
